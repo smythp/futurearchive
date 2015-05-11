@@ -51,7 +51,7 @@ Modules - reusable parts of our design
   /* clearfix */
   content: '';
   display: table;
-  clear: both;
+  clear: right;
 }
 
 /* -------------------------------- 
@@ -109,7 +109,7 @@ header h1 {
 }
 
 .cd-timeline-block {
-  position: relative;
+  position: relative;r
   margin: 2em 0;
 }
 .cd-timeline-block:after {
@@ -330,24 +330,40 @@ header h1 {
     font-size: 16px;
     font-size: 1rem;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+
+
+
+
+
+
+
+  .cd-timeline-block-techno .cd-timeline-content {
     float: right;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+  .cd-timeline-block-techno .cd-timeline-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
     border-right-color: white;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+  .cd-timeline-block-techno .cd-timeline-content .cd-read-more {
     float: right;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+  .cd-timeline-block-techno .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
     text-align: right;
   }
+
+
+
+
+
+
+
+
+
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
   }
@@ -361,7 +377,7 @@ header h1 {
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+  .cssanimations .cd-timeline-block-techno .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;

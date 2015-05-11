@@ -1,0 +1,6 @@
+
+
+cd-timeline-block-techno   >> Makes the element appear on the right (i.e., for technology)
+
+Use:
+<div class="cd-timeline-block cd-timeline-block-techno">
